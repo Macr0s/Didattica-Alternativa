@@ -1,0 +1,10 @@
+Options +FollowSymlinks
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^database/(.*).html$ database.php&page=$1
+
+RewriteRule ^index.html$ index.php
+
+RewriteRule ^update.html- update.php
